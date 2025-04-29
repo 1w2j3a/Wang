@@ -1,64 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .red-box {
-            border: 2px solid red;
-            padding: 10px;
+            border: 2px solid #ff4444;
+            padding: 12px;
             display: inline-block;
-            margin-bottom: 20px;
+            margin: 25px 0;
         }
         .blue-box {
-            border: 2px solid blue;
-            padding: 15px;
-            margin-bottom: 20px;
+            border: 2px solid #4285f4;
+            padding: 18px;
+            margin: 25px 0;
+            max-width: 650px;
+            line-height: 1.6;
         }
         .green-box {
-            border: 2px solid green;
-            padding: 15px;
-            margin-bottom: 20px;
+            border: 2px solid #34a853;
+            padding: 18px;
+            margin: 25px 0;
         }
         .black-box {
-            border: 2px solid black;
+            border: 2px solid #2d2d2d;
             padding: 15px;
             display: inline-block;
+        }
+        .nav-menu {
+            margin: 25px 0;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 6px;
+        }
+        .nav-menu a {
+            margin-right: 30px;
+            text-decoration: none;
+            color: #202124;
+            font-weight: 500;
+        }
+        .profile-img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin: 25px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
         .section-title {
             font-size: 24px;
-            color: #333;
-            margin: 20px 0;
+            color: #3c4043;
+            margin: 30px 0 20px;
+            font-family: 'Segoe UI', sans-serif;
         }
-        img {
-            width: 150px;
-            height: auto;
-            margin-bottom: 20px;
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
-    <!-- 姓名（红色框） -->
+    <!-- Navigation -->
+    <nav class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Name -->
     <div class="red-box">
         <h1>Jialei Wang</h1>
     </div>
 
-    <!-- 个人照片（占位符） -->
-    <img src="[my_photo]" alt="个人照片">
+    <!-- Profile Photo -->
+    <img class="profile-img" src="[Your_Photo_Path_HERE]" alt="Jialei Wang's Portfolio Photo">
 
-    <!-- 个人简介（蓝色框） -->
+    <!-- Profile Section -->
     <div class="blue-box">
-        <p>山东师范大学信息科学与工程学院在读硕士生，研究方向为物理层安全。</p>
+        <h2>Academic Profile</h2>
+        <p>Jialei Wang is a postgraduate researcher at the School of Information Science and Engineering, Shandong Normal University.</p>
+        <p><strong>Research Focus:</strong> Physical layer security with specialization in STAR RIS (Simultaneously Transmitting and Reflecting Reconfigurable Intelligent Surfaces) technology development. Current work emphasizes hybrid signal manipulation protocols for 6G communication systems.</p>
     </div>
 
-    <!-- 在研项目（绿色框） -->
-    <div class="section-title">Projects</div>
+    <!-- Projects Section -->
+    <div class="section-title">Active Projects</div>
     <div class="green-box">
-        <p>无</p>
+        <p>No publicly available projects at this time</p>
     </div>
 
-    <!-- 联系方式（黑色框） -->
-    <div class="section-title">Contact</div>
+    <!-- Contact Information -->
+    <div class="section-title">Contact Details</div>
     <div class="black-box">
-        <p>407535274@qq.com</p>
+        <p>📧 <a href="mailto:407535274@qq.com">407535274@qq.com</a></p>
     </div>
 </body>
 </html>
