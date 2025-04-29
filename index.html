@@ -3,96 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jialei Wang - Academic Profile</title>
     <style>
-        .red-box {
-            border: 2px solid #ff4444;
-            padding: 12px;
-            display: inline-block;
-            margin: 25px 0;
-        }
-        .blue-box {
-            border: 2px solid #4285f4;
-            padding: 18px;
-            margin: 25px 0;
-            max-width: 650px;
-            line-height: 1.6;
-        }
-        .green-box {
-            border: 2px solid #34a853;
-            padding: 18px;
-            margin: 25px 0;
-        }
-        .black-box {
-            border: 2px solid #2d2d2d;
-            padding: 15px;
-            display: inline-block;
-        }
-        .nav-menu {
-            margin: 25px 0;
-            padding: 12px;
-            background: #f8f9fa;
-            border-radius: 6px;
-        }
-        .nav-menu a {
-            margin-right: 30px;
-            text-decoration: none;
-            color: #202124;
-            font-weight: 500;
-        }
-        .profile-img {
-            width: 200px;
-            height: auto;
-            border-radius: 50%;
-            object-fit:cover;
-            margin: 25px 0;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        .section-title {
-            font-size: 24px;
-            color: #3c4043;
-            margin: 30px 0 20px;
-            font-family: 'Segoe UI', sans-serif;
-        }
+        /* 基础样式 */
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             max-width: 800px;
             margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        /* 导航菜单 */
+        .nav-menu {
+            text-align: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+        }
+        .nav-menu a {
+            margin: 0 25px;
+            text-decoration: none;
+            color: #2d2d2d;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-menu a:hover {
+            color: #1a73e8;
+        }
+
+        /* 姓名样式 */
+        .name-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .name-box {
+            display: inline-block;
+            padding: 15px 30px;
+            border: 3px solid #dc3545;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        /* 照片样式 */
+        .profile-img {
+            width: 220px;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 30px auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* 内容区块 */
+        .content-section {
+            margin: 40px 0;
+            padding: 25px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .blue-box {
+            border-left: 5px solid #007bff;
+        }
+        .green-box {
+            border-left: 5px solid #28a745;
+        }
+        .black-box {
+            border-left: 5px solid #343a40;
+        }
+
+        /* 标题样式 */
+        .section-title {
+            font-size: 24px;
+            color: #2d2d2d;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #dee2e6;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- 导航菜单 -->
     <nav class="nav-menu">
         <a href="#home">Home</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Name -->
-    <div class="red-box">
-        <h1>Jialei Wang</h1>
+    <!-- 姓名 -->
+    <div class="name-container">
+        <div class="name-box">
+            <h1>Jialei Wang</h1>
+        </div>
     </div>
 
-    <!-- Profile Photo -->
-    <img class="profile-img" src="my_photo.jpg" alt="Jialei Wang's Portfolio Photo">
+    <!-- 个人照片 -->
+    <img class="profile-img" 
+         src="my_photo.jpg" 
+         alt="Jialei Wang's Academic Profile Photo">
 
-    <!-- Profile Section -->
-    <div class="blue-box">
-        <h2>Academic Profile</h2>
-        <p>Jialei Wang is a postgraduate researcher at the School of Information Science and Engineering, Shandong Normal University.</p>
-        <p><strong>Research Focus:</strong> Physical layer security with specialization in STAR RIS (Simultaneously Transmitting and Reflecting Reconfigurable Intelligent Surfaces) technology development. Current work emphasizes hybrid signal manipulation protocols for 6G communication systems.</p>
+    <!-- 个人简介 -->
+    <div class="content-section blue-box">
+        <h2 class="section-title">Academic Profile</h2>
+        <p>Jialei Wang is a postgraduate student in the School of Information Science and Engineering at Shandong Normal University.</p>
+        <p><strong>Research Focus:</strong> Specializing in physical layer security with particular interest in advanced signal processing techniques and secure communication protocols.</p>
     </div>
 
-    <!-- Projects Section -->
-    <div class="section-title">Active Projects</div>
-    <div class="green-box">
-        <p>No publicly available projects at this time</p>
+    <!-- 在研项目 -->
+    <div class="content-section green-box">
+        <h2 class="section-title">Current Projects</h2>
+        <p>No ongoing public projects at this time</p>
     </div>
 
-    <!-- Contact Information -->
-    <div class="section-title">Contact Details</div>
-    <div class="black-box">
+    <!-- 联系方式 -->
+    <div class="content-section black-box">
+        <h2 class="section-title">Contact Information</h2>
         <p>📧 <a href="mailto:407535274@qq.com">407535274@qq.com</a></p>
     </div>
 </body>
